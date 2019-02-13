@@ -1,0 +1,11 @@
+version: '3'
+services:
+  flaskapp:
+    image: "tomyci/expert_system_module:latest"
+    ports:
+      - "5000:80"
+    networks:
+      - web_nw
+networks:
+  web_nw:
+    driver: bridge
